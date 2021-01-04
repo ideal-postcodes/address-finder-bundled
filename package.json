@@ -1,0 +1,91 @@
+{
+  "name": "@ideal-postcodes/address-finder-bundled",
+  "version": "1.0.0",
+  "description": "JS bundles for Address Finder library",
+  "author": {
+    "name": "Ideal Postcodes",
+    "email": "support@ideal-postcodes.co.uk",
+    "url": "https://ideal-postcodes.co.uk"
+  },
+  "bugs": {
+    "url": "https://github.com/ideal-postcodes/address-finder-bundled/issues",
+    "email": "support@ideal-postcodes.co.uk"
+  },
+  "homepage": "https://github.com/ideal-postcodes/address-finder-bundled",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ideal-postcodes/address-finder-bundled.git"
+  },
+  "scripts": {
+    "semantic-release": "semantic-release --no-ci",
+    "start": "http-server",
+    "build": "rollup -c",
+    "test": "npm run test:local:umd && npm run test:local:esm",
+    "test:local:umd": "karma start .config/local.umd.ts",
+    "test:local:esm": "karma start .config/local.esm.ts",
+    "test:ie": "karma start .config/ie11.ts",
+    "test:umd": "karma start .config/umd.ts",
+    "test:esm": "karma start .config/esm.ts",
+    "test:modern": "karma start .config/modern.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "main": "dist/address-finder.umd.min.js",
+  "module": "dist/address-finder.esm.modern.min.js",
+  "files": [
+    "dist"
+  ],
+  "prettier": {
+    "trailingComma": "es5"
+  },
+  "engines": {
+    "node": ">=12.0"
+  },
+  "keywords": [
+    "API",
+    "UK",
+    "Address Search",
+    "Address Finder",
+    "Search",
+    "Ideal Postcodes"
+  ],
+  "release": {
+    "extends": "@cablanchard/semantic-release/dist/npm",
+    "branches": [
+      "main",
+      "next"
+    ]
+  },
+  "license": "AGPL-3.0",
+  "devDependencies": {
+    "@babel/core": "~7.12.10",
+    "@babel/preset-env": "~7.12.11",
+    "@cablanchard/semantic-release": "~1.3.4",
+    "@cablanchard/tsconfig": "~2.0.0",
+    "@ideal-postcodes/address-finder": "~1.0.0",
+    "@ideal-postcodes/supported-browsers": "~2.5.0",
+    "@open-wc/karma-esm": "~4.0.0",
+    "@rollup/plugin-commonjs": "~17.0.0",
+    "@rollup/plugin-node-resolve": "~11.0.1",
+    "@types/mocha": "~8.2.0",
+    "@types/puppeteer": "~5.4.2",
+    "core-js": "~3.8.2",
+    "dotenv": "~8.2.0",
+    "http-server": "~0.12.3",
+    "karma": "~5.2.3",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-cli": "~2.0.0",
+    "karma-mocha": "~2.0.1",
+    "karma-sauce-launcher": "~4.3.4",
+    "karma-typescript": "~5.2.0",
+    "mocha": "~8.2.1",
+    "prettier": "~2.2.1",
+    "puppeteer": "~5.5.0",
+    "rollup": "~2.35.1",
+    "rollup-plugin-babel": "~4.4.0",
+    "rollup-plugin-terser": "~7.0.2",
+    "semantic-release": "~17.3.1",
+    "ts-node": "~9.1.1",
+    "typescript": "~4.1.3"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <title>Getting Started</title>
+    <style>
+      body {
+        max-width: 38rem;
+        padding: 2rem;
+        margin: auto;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="https://img.ideal-postcodes.co.uk/favicon.svg"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://img.ideal-postcodes.co.uk/favicon.ico"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.0/milligram.css"
+    />
+    <script type="module" src="../dist/address-finder.esm.min.js"></script>
+  </head>
+  <body>
+    <h1>ESM Demo</h1>
+    <label for="line_1">Address First Line</label>
+    <input type="text" id="line_1" />
+    <label for="line_2">Address Second Line</label>
+    <input type="text" id="line_2" />
+    <label for="line_3">Address Third Line</label>
+    <input type="text" id="line_3" />
+    <label for="post_town">Town or City</label>
+    <input type="text" id="post_town" />
+    <label for="postcode">Postcode</label>
+    <input type="text" id="postcode" />
+    <script type="module">
+      import { AddressFinder } from "../dist/address-finder.esm.min.js";
+      PostcodeLookup.setup({
+        apiKey: "iddqd",
+        inputField: "#line_1",
+        outputFields: {
+          line_1: "#line_1",
+          line_2: "#line_2",
+          line_3: "#line_3",
+          post_town: "#post_town",
+          postcode: "#postcode",
+        },
+      });
+    </script>
+  </body>
+</html>
