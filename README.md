@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="https://img.ideal-postcodes.co.uk/Postcode%20Lookup%20Logo@3x.png" alt="Ideal Postcodes Adress Finder Bundle">
+  <img src="https://img.ideal-postcodes.co.uk/Address%20Finder%20Logo@3x.png" alt="Ideal Postcodes Adress Finder Bundle">
 </h1>
 
 > JavaScript browser bundles for the Address Finder library
