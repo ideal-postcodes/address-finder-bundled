@@ -1,5 +1,5 @@
 import "core-js";
-import babel from "rollup-plugin-babel";
+import babel from "@rollup/plugin-babel";
 import { terser } from "rollup-plugin-terser";
 import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
@@ -28,15 +28,18 @@ const terserConfig = {
 
 const sourceMap = false;
 
+const babelHelpers = "bundled";
+
 /**
  * Whitelist files processed by Babel
  */
 const include = [
-  "node_modules/@ideal-postcodes/core-interface/esm/**",
-  "node_modules/@ideal-postcodes/core-axios/esm/**",
   "node_modules/@ideal-postcodes/address-finder/esm/**",
+  "node_modules/@ideal-postcodes/core-axios/esm/**",
+  "node_modules/@ideal-postcodes/core-interface/esm/**",
   "node_modules/@ideal-postcodes/jsutil/esm/**",
   "node_modules/capitalise-post-town/dist/**",
+  "node_modules/lodash-es/debounce.js",
 ];
 
 const context = "window";
@@ -63,6 +66,7 @@ export default [
         babelrc: false,
         ignore: [/core-js/], // Prevent core-js from transforming itself https://github.com/rollup/rollup-plugin-babel/issues/254
         include,
+        babelHelpers,
         sourceMap,
         presets: [
           [
@@ -101,6 +105,7 @@ export default [
         ignore: [/core-js/],
         include,
         sourceMap,
+        babelHelpers,
         presets: [
           [
             "@babel/preset-env",
@@ -143,6 +148,7 @@ export default [
         babelrc: false,
         ignore: [/core-js/],
         include,
+        babelHelpers,
         sourceMap,
         presets: [
           [
