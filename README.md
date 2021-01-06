@@ -15,31 +15,29 @@ This package exports polyfilled, minified copies of `address-finder` in various 
 
 If you intend to incorporate the browser client in your own bundle, please use [`address-finder`](https://github.com/ideal-postcodes/address-finder) as your `package.json` dependency.
 
-Builds tested against [a suite of modern and legacy, mobile and desktop browsers](https://github.com/ideal-postcodes/supported-browsers).
-
 ## Download
 
 Latest and pinned versions of each bundle can be downloaded from [jsdelivr.com](https://www.jsdelivr.com).
 
-We strongly recommend serving your own versioned copy. If served from jsdelivr.com please attach a version number.
+We recommend serving your own versioned copy. If served from jsdelivr.com you must attach a version number.
 
-### Latest Versions
+### Download Latest Bundle
 
 - [address-finder.umd.min.js@latest](https://cdn.jsdelivr.net/npm/@ideal-postcodes/address-finder-bundled/dist/address-finder.umd.min.js)
 - [address-finder.umd.ie11.min.js@latest](https://cdn.jsdelivr.net/npm/@ideal-postcodes/address-finder-bundled/dist/address-finder.umd.ie11.min.js)
 - [address-finder.esm.min.js@latest](https://cdn.jsdelivr.net/npm/@ideal-postcodes/address-finder-bundled/dist/address-finder.esm.min.js)
 - [address-finder.esm.modern.min.js@latest](https://cdn.jsdelivr.net/npm/@ideal-postcodes/address-finder-bundled/dist/address-finder.esm.modern.min.js)
 
-### Pinned Versions
+### ⚠️ Pinning Versions
 
-⚠️ It is important you pin your bundle version in production. Pulling directly from latest may introduce backwards breaking changes.
+It is important you pin your bundle version in production. Pulling directly from latest **will** cause your integration to fail at some point in the future.
 
-Please follow the instructions on [jsdelivr.com/address-finder-bundled](https://www.jsdelivr.com/package/npm/@ideal-postcodes/address-finder-bundled) to pin a specific version in production.
+Follow the instructions on [jsdelivr.com/address-finder-bundled](https://www.jsdelivr.com/package/npm/@ideal-postcodes/address-finder-bundled) to pin a specific version in production.
 
-Example `<script>` pinned to version `1.4.0`
+Example `<script>` pinned to version `1.0.1`
 
 ```
-<script src="https://cdn.jsdelivr.net/npm/@ideal-postcodes/address-finder-bundled@1.4.0/dist/address-finder.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@ideal-postcodes/address-finder-bundled@1.0.1/dist/address-finder.umd.min.js"></script>
 ```
 
 ## Links
@@ -64,14 +62,12 @@ Example `<script>` pinned to version `1.4.0`
 
 - **UMD compatible**
 - Transpiles address-finder to target browsers with more than 0.25% marketshare according to [caniuse.com](https://caniuse.com/usage-table). This is a moving target and obselete browsers will lose support over time as new builds are created.
-- Bundled with `fetch` polyfill
 - Default export of the npm module
 
 #### address-finder.umd.ie11.min.js
 
 - **UMD compatible**
 - Transpiles address-finder to target IE11 as minimum browser version. This will create a fixed target bundle over time. The tradeoff to this is larger script payload.
-- Bundled with `fetch` polyfill
 
 #### address-finder.esm.min.js
 
@@ -90,7 +86,7 @@ Example `<script>` pinned to version `1.4.0`
 #### UMD
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@ideal-postcodes/address-finder-bundled/dist/address-finder.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@ideal-postcodes/address-finder-bundled@1.0.1/dist/address-finder.umd.min.js"></script>
 
 <script>
   AddressFinder.setup({
@@ -112,10 +108,10 @@ Example `<script>` pinned to version `1.4.0`
 ```html
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/@ideal-postcodes/address-finder-bundled/dist/address-finder.esm.min.js"></script>
+  src="https://cdn.jsdelivr.net/npm/@ideal-postcodes/address-finder-bundled@1.0.1/dist/address-finder.esm.min.js"></script>
 
 <script type="module">
-  import { AddresFinder } from "https://cdn.jsdelivr.net/npm/@ideal-postcodes/address-finder-bundled/dist/address-finder.esm.min.js";
+  import { AddressFinder } from "https://cdn.jsdelivr.net/npm/@ideal-postcodes/address-finder-bundled@1.0.1/dist/address-finder.esm.min.js";
   AddressFinder.setup({
     apiKey: "iddqd",
     inputField: "#line_1",
