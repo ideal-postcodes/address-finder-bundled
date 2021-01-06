@@ -23,10 +23,12 @@ We recommend serving your own versioned copy. If served from jsdelivr.com you mu
 
 ### Download Latest Bundle
 
-- [address-finder.umd.min.js@latest](https://cdn.jsdelivr.net/npm/@ideal-postcodes/address-finder-bundled/dist/address-finder.umd.min.js)
-- [address-finder.umd.ie11.min.js@latest](https://cdn.jsdelivr.net/npm/@ideal-postcodes/address-finder-bundled/dist/address-finder.umd.ie11.min.js)
-- [address-finder.esm.min.js@latest](https://cdn.jsdelivr.net/npm/@ideal-postcodes/address-finder-bundled/dist/address-finder.esm.min.js)
-- [address-finder.esm.modern.min.js@latest](https://cdn.jsdelivr.net/npm/@ideal-postcodes/address-finder-bundled/dist/address-finder.esm.modern.min.js)
+- [address-finder.umd.min.js](https://cdn.jsdelivr.net/npm/@ideal-postcodes/address-finder-bundled/dist/address-finder.umd.min.js)
+- [address-finder.umd.ie11.min.js](https://cdn.jsdelivr.net/npm/@ideal-postcodes/address-finder-bundled/dist/address-finder.umd.ie11.min.js)
+- [address-finder.esm.min.js](https://cdn.jsdelivr.net/npm/@ideal-postcodes/address-finder-bundled/dist/address-finder.esm.min.js)
+- [address-finder.esm.modern.min.js](https://cdn.jsdelivr.net/npm/@ideal-postcodes/address-finder-bundled/dist/address-finder.esm.modern.min.js)
+
+Do not link the above URLs in your scripts. Instead use pinned versions described below.
 
 ### ⚠️ Pinning Versions
 
