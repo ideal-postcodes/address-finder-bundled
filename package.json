@@ -1,6 +1,6 @@
 {
   "name": "@ideal-postcodes/address-finder-bundled",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "JS bundles for Address Finder library",
   "author": {
     "name": "Ideal Postcodes",
