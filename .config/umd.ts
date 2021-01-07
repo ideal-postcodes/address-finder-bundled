@@ -17,8 +17,5 @@ module.exports = (config: any): void =>
     ...sauceConfig({ testName: "Address-Finder-Bundled", defaults }),
     browsers: Object.keys(customLaunchers),
     customLaunchers,
-    files: [
-      "dist/address-finder.umd.min.js",
-      { pattern: "test/umd.integration.ts" },
-    ],
+    files: ["dist/address-finder.js", { pattern: "test/umd.integration.ts" }],
   });

@@ -1,5 +1,5 @@
 /**
- * Test runner for fixed ie11 build
+ * Test runner for IE 11
  */
 import {
   legacyDesktop,
@@ -14,8 +14,5 @@ module.exports = (config: any): void =>
     ...sauceConfig({ testName: "Address-Finder-Bundled", defaults }),
     browsers: Object.keys(customLaunchers),
     customLaunchers,
-    files: [
-      "dist/address-finder.umd.ie11.min.js",
-      { pattern: "test/umd.integration.ts" },
-    ],
+    files: ["dist/address-finder.js", { pattern: "test/umd.integration.ts" }],
   });

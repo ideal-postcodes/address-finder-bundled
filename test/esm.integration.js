@@ -1,4 +1,4 @@
-import { AddressFinder } from "address-finder.esm.min.js";
+import { AddressFinder } from "address-finder.esm.js";
 const doc = new DOMParser().parseFromString(
   `
     <html>

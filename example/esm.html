@@ -33,7 +33,24 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.0/milligram.css"
     />
-    <script type="module" src="../dist/address-finder.esm.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@ideal-postcodes/address-finder@1.1.1/css/address-finder.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@ideal-postcodes/address-finder@1.1.1/css/optional.min.css"
+    />
+    <style>
+      li {
+        margin: 0;
+        padding: 0;
+      }
+      .idpc_ul {
+        margin-top: -1.4rem !important;
+      }
+    </style>
+    <script type="module" src="../dist/address-finder.esm.js"></script>
   </head>
   <body>
     <h1>ESM Demo</h1>
@@ -48,8 +65,8 @@
     <label for="postcode">Postcode</label>
     <input type="text" id="postcode" />
     <script type="module">
-      import { AddressFinder } from "../dist/address-finder.esm.min.js";
-      PostcodeLookup.setup({
+      import { AddressFinder } from "../dist/address-finder.esm.js";
+      AddressFinder.setup({
         apiKey: "iddqd",
         inputField: "#line_1",
         outputFields: {

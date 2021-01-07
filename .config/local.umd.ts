@@ -1,5 +1,5 @@
 /**
- * Local test runner
+ * Local test runner for UMD build
  */
 import {
   frameworks,
@@ -23,7 +23,7 @@ module.exports = (config: any): void =>
     basePath,
     browsers: ["ChromeHeadless"],
     files: [
-      { pattern: "dist/address-finder.umd.min.js" },
+      { pattern: "dist/address-finder.js" },
       { pattern: "test/umd.integration.ts" },
     ],
   });
