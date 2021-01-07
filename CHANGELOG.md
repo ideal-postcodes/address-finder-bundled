@@ -1,3 +1,16 @@
+# [2.0.0](https://github.com/ideal-postcodes/address-finder-bundled/compare/1.1.0...2.0.0) (2021-01-07)
+
+
+### Features
+
+* **Bundles:** Simplify Bundles ([b4f006f](https://github.com/ideal-postcodes/address-finder-bundled/commit/b4f006f70535a897366bceb14ec18039f3cf916c))
+
+
+### BREAKING CHANGES
+
+* **Bundles:** Latest ESM and Modern UMD bundles have been eliminated.
+For better browser targeting use the upstream address-finder project
+
 # [1.1.0](https://github.com/ideal-postcodes/address-finder-bundled/compare/1.0.1...1.1.0) (2021-01-06)
 
 
