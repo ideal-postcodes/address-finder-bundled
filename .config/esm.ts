@@ -1,8 +1,7 @@
 /**
- * Test runner for fixed movin UMD build
+ * Test runner ESM build
  */
 import "core-js/stable";
-import "regenerator-runtime/runtime";
 import {
   latestDesktop,
   latestMobile,
@@ -29,7 +28,7 @@ module.exports = (config: any): void =>
       moduleDirs: ["node_modules", "dist"],
     },
     files: [
-      { pattern: "dist/address-finder.esm.min.js", type: "module" },
+      { pattern: "dist/address-finder.esm.s", type: "module" },
       { pattern: "test/esm.integration.js", type: "module" },
     ],
   });

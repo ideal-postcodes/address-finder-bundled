@@ -26,11 +26,10 @@
     "test:ie": "karma start .config/ie11.ts",
     "test:umd": "karma start .config/umd.ts",
     "test:esm": "karma start .config/esm.ts",
-    "test:modern": "karma start .config/modern.ts",
     "prepublishOnly": "npm run build"
   },
-  "main": "dist/address-finder.umd.min.js",
-  "module": "dist/address-finder.esm.modern.min.js",
+  "main": "dist/address-finder.js",
+  "module": "dist/address-finder.esm.js",
   "files": [
     "dist"
   ],
@@ -63,7 +62,7 @@
     "@cablanchard/tsconfig": "~2.0.0",
     "@ideal-postcodes/supported-browsers": "~2.5.0",
     "@open-wc/karma-esm": "~4.0.0",
-    "@rollup/plugin-babel": "^5.2.2",
+    "@rollup/plugin-babel": "~5.2.2",
     "@rollup/plugin-commonjs": "~17.0.0",
     "@rollup/plugin-node-resolve": "~11.0.1",
     "@types/mocha": "~8.2.0",

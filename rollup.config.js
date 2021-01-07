@@ -4,7 +4,7 @@ import { terser } from "rollup-plugin-terser";
 import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 
-import { version, devDependencies, license } from "./package.json";
+import { version, dependencies, license } from "./package.json";
 
 const input = "node_modules/@ideal-postcodes/address-finder/esm/index.js";
 
@@ -13,7 +13,7 @@ const banner = `/**
  * Ideal Postcodes <https://ideal-postcodes.co.uk>
  * Copyright IDDQD Limited
  * Address Finder Bundled ${version}
- * Built on Addres Finder ${devDependencies["@ideal-postcodes/address-finder"]}
+ * Built on Address Finder ${dependencies["@ideal-postcodes/address-finder"]}
  * ${license} Licence
  */`;
 
@@ -46,53 +46,13 @@ const context = "window";
 
 export default [
   /**
-   * UMD build targeting 99.75% browser share
-   */
-  {
-    input,
-    context,
-    output: {
-      file: "./dist/address-finder.umd.min.js",
-      banner,
-      format: "umd",
-      extend: true,
-      name: "IdealPostcodes",
-      exports: "named", // Disable warning for default imports
-    },
-    plugins: [
-      resolve({ browser: true }),
-      commonjs(),
-      babel({
-        babelrc: false,
-        ignore: [/core-js/], // Prevent core-js from transforming itself https://github.com/rollup/rollup-plugin-babel/issues/254
-        include,
-        babelHelpers,
-        sourceMap,
-        presets: [
-          [
-            "@babel/preset-env",
-            {
-              targets: "> 0.25%, not dead",
-              modules: false,
-              spec: true,
-              useBuiltIns: "usage",
-              corejs: 3,
-            },
-          ],
-        ],
-      }),
-      terser(terserConfig),
-    ],
-  },
-
-  /**
    * ESM build targeting minimum browser versions that allow [ES6 Modules](https://caniuse.com/#feat=es6-module)
    */
   {
     input,
     context,
     output: {
-      file: "./dist/address-finder.esm.min.js",
+      file: "./dist/address-finder.esm.js",
       banner,
       format: "esm",
       exports: "named",
@@ -134,7 +94,7 @@ export default [
     input,
     context,
     output: {
-      file: "./dist/address-finder.umd.ie11.min.js",
+      file: "./dist/address-finder.js",
       banner,
       format: "umd",
       extend: true,
@@ -167,19 +127,5 @@ export default [
       }),
       terser(terserConfig),
     ],
-  },
-  /**
-   * ESM build that targets latest browsers (no transpilation step)
-   */
-  {
-    input,
-    context,
-    output: {
-      file: "./dist/address-finder.esm.modern.min.js",
-      banner,
-      format: "esm",
-      exports: "named",
-    },
-    plugins: [resolve({ browser: true }), commonjs(), terser(terserConfig)],
   },
 ];

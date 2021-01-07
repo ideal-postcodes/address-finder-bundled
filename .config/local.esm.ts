@@ -1,5 +1,5 @@
 /**
- * Local test runner
+ * Local test runner for ESM build
  */
 import {
   frameworks,
@@ -33,7 +33,6 @@ module.exports = (config: any): void =>
     browsers: ["ChromeHeadless"],
     files: [
       { pattern: "test/esm.integration.js", type: "module" },
-      { pattern: "test/umd.integration.js" },
-      { pattern: "dist/address-finder.esm.min.js", type: "module" },
+      { pattern: "dist/address-finder.esm.js", type: "module" },
     ],
   });
