@@ -21,7 +21,7 @@ If you intend to incorporate the browser client in your own bundle, please use [
 
 - [address-finder.js](https://cdn.jsdelivr.net/npm/@ideal-postcodes/address-finder-bundled/dist/address-finder.js)
 
-Serving your own versioned copy is recommended. If a JavaScript CDN is used (e.g. jsDelivr, cdjs), be sure to pin the version.
+Serving your own versioned copy is recommended. If a JavaScript CDN is used (e.g. jsDelivr, cdnjs), be sure to pin the version.
 
 Use [address-finder.esm.js](https://cdn.jsdelivr.net/npm/@ideal-postcodes/address-finder-bundled/dist/address-finder.esm.js) if you need a ES Module compatible build.
 
