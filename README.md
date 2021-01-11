@@ -5,7 +5,7 @@
 > JavaScript browser bundles for the Address Finder library
 
 ![CI](https://github.com/ideal-postcodes/address-finder-bundled/workflows/CI/badge.svg)
-![Cross Browser Testing](https://github.com/ideal-postcodes/address-finder-bundled/workflows/Cross%20Browser%20Testing/badge.svg?branch=saucelabs)
+![Cross Browser Testing](https://github.com/ideal-postcodes/address-finder-bundled/workflows/Cross%20Browser%20Testing/badge.svg)
 
 [![npm version](https://badge.fury.io/js/%40ideal-postcodes%2Faddress-finder-bundled.svg)](https://badge.fury.io/js/%40ideal-postcodes%2Faddress-finder-bundled)
 [![jscdn](https://badgen.net/jsdelivr/v/npm/@ideal-postcodes/address-finder-bundled)](https://cdn.jsdelivr.net/npm/@ideal-postcodes/address-finder-bundled/dist/)
