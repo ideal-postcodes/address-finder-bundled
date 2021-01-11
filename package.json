@@ -24,6 +24,9 @@
     "test:local:umd": "karma start .config/local.umd.ts",
     "test:local:esm": "karma start .config/local.esm.ts",
     "test:ie": "karma start .config/ie11.ts",
+    "test:browsers:latest": "karma start .config/latest.ts",
+    "test:browsers:legacy": "karma start .config/legacy.ts",
+    "test:browsers": "npm run test:browsers:legacy && npm run test:browsers:latest",
     "test:umd": "karma start .config/umd.ts",
     "test:esm": "karma start .config/esm.ts",
     "prepublishOnly": "npm run build"
