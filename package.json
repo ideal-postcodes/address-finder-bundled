@@ -67,7 +67,7 @@
     "@open-wc/karma-esm": "~4.0.0",
     "@rollup/plugin-babel": "~5.2.2",
     "@rollup/plugin-commonjs": "~17.0.0",
-    "@rollup/plugin-node-resolve": "~11.0.1",
+    "@rollup/plugin-node-resolve": "~11.1.0",
     "@types/mocha": "~8.2.0",
     "@types/puppeteer": "~5.4.2",
     "core-js": "~3.8.2",
