@@ -6,10 +6,11 @@
 
 ![CI](https://github.com/ideal-postcodes/address-finder-bundled/workflows/CI/badge.svg)
 ![Cross Browser Testing](https://github.com/ideal-postcodes/address-finder-bundled/workflows/Cross%20Browser%20Testing/badge.svg)
+![Release](https://github.com/ideal-postcodes/address-finder-bundled/workflows/Release/badge.svg)
 
 [![npm version](https://badge.fury.io/js/%40ideal-postcodes%2Faddress-finder-bundled.svg)](https://badge.fury.io/js/%40ideal-postcodes%2Faddress-finder-bundled)
 [![jscdn](https://badgen.net/jsdelivr/v/npm/@ideal-postcodes/address-finder-bundled)](https://cdn.jsdelivr.net/npm/@ideal-postcodes/address-finder-bundled/dist/)
-![Release](https://github.com/ideal-postcodes/address-finder-bundled/workflows/Release/badge.svg)
+[![npm bundle size](https://img.shields.io/bundlephobia/minzip/@ideal-postcodes/address-finder)](https://bundlephobia.com/result?p=@ideal-postcodes/address-finder)
 
 This package exports polyfilled, minified copies of `address-finder` in various formats available on npm and various JavaScript CDNs. It can be readily [dropped in](#usage) on a page without transpilation of `address-finder`.
 
