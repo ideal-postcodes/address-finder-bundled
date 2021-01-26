@@ -9,7 +9,7 @@ import { version, dependencies, license } from "./package.json";
 const input = "node_modules/@ideal-postcodes/address-finder/esm/index.js";
 
 const banner = `/**
- * @license 
+ * @license
  * Ideal Postcodes <https://ideal-postcodes.co.uk>
  * Copyright IDDQD Limited
  * Address Finder Bundled ${version}

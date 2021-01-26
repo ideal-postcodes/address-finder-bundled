@@ -67,7 +67,7 @@
     <script type="module">
       import { AddressFinder } from "../dist/address-finder.esm.js";
       AddressFinder.setup({
-        apiKey: "iddqd",
+        apiKey: window.apiKey || "iddqd",
         inputField: "#line_1",
         outputFields: {
           line_1: "#line_1",
