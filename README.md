@@ -51,7 +51,7 @@ For instance, follow the instructions on [jsdelivr.com/address-finder-bundled](h
 #### address-finder.js
 
 - **UMD compatible**
-- Transpiles address-finder to target Internet Explorer 11 as minimum browser version. This will create a fixed target bundle over time. The tradeoff to this is larger script payload.
+- Transpiles address-finder to target Internet Explorer 11 as minimum browser version
 - Default export of the npm module
 
 #### address-finder.esm.js
