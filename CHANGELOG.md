@@ -1,3 +1,10 @@
+# [2.3.0](https://github.com/ideal-postcodes/address-finder-bundled/compare/2.2.0...2.3.0) (2021-02-08)
+
+
+### Features
+
+* **deps:** bump @ideal-postcodes/address-finder from 1.3.1 to 1.5.1 ([#31](https://github.com/ideal-postcodes/address-finder-bundled/issues/31)) ([abe37d0](https://github.com/ideal-postcodes/address-finder-bundled/commit/abe37d049a73e095ed3014371bc62a254e91ab44))
+
 # [2.2.0](https://github.com/ideal-postcodes/address-finder-bundled/compare/2.1.0...2.2.0) (2021-01-21)
 
 
