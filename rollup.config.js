@@ -1,8 +1,14 @@
-import "core-js";
 import babel from "@rollup/plugin-babel";
 import { terser } from "rollup-plugin-terser";
 import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
+import inject from "@rollup/plugin-inject";
+
+export const polyfills = {
+  Promise: "promise-polyfill",
+  Set: "core-js-pure/features/set",
+  "Object.assign": "core-js-pure/features/object/assign",
+};
 
 import { version, dependencies, license } from "./package.json";
 
@@ -39,7 +45,8 @@ const include = [
   "node_modules/@ideal-postcodes/core-interface/esm/**",
   "node_modules/@ideal-postcodes/jsutil/esm/**",
   "node_modules/capitalise-post-town/dist/**",
-  "node_modules/lodash-es/debounce.js",
+  "node_modules/lodash/debounce.js",
+  "node_modules/core-js-pure/**/*",
 ];
 
 const context = "window";
@@ -58,11 +65,16 @@ export default [
       exports: "named",
     },
     plugins: [
-      resolve({ browser: true }),
+      resolve({
+        preferBuiltins: true,
+        dedupe: ["@ideal-postcodes/jsutil"],
+        mainFields: ["browser", "module", "main"],
+        browser: true,
+      }),
       commonjs(),
+      inject(polyfills),
       babel({
         babelrc: false,
-        ignore: [/core-js/],
         include,
         sourceMap,
         babelHelpers,
@@ -76,10 +88,6 @@ export default [
                 chrome: "61",
                 safari: "11",
               },
-              modules: false,
-              spec: true,
-              useBuiltIns: "usage",
-              corejs: 3,
             },
           ],
         ],
@@ -102,28 +110,21 @@ export default [
       exports: "named",
     },
     plugins: [
-      resolve({ browser: true }),
+      resolve({
+        preferBuiltins: true,
+        dedupe: ["@ideal-postcodes/jsutil"],
+        mainFields: ["browser", "module", "main"],
+        browser: true,
+      }),
       commonjs(),
+      inject(polyfills),
       babel({
         babelrc: false,
         ignore: [/core-js/],
         include,
         babelHelpers,
         sourceMap,
-        presets: [
-          [
-            "@babel/preset-env",
-            {
-              targets: {
-                ie: "11",
-              },
-              modules: false,
-              spec: true,
-              useBuiltIns: "usage",
-              corejs: 3,
-            },
-          ],
-        ],
+        presets: [["@babel/preset-env", { targets: { ie: "11" } }]],
       }),
       terser(terserConfig),
     ],
