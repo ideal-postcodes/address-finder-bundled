@@ -1,3 +1,10 @@
+## [2.4.1](https://github.com/ideal-postcodes/address-finder-bundled/compare/2.4.0...2.4.1) (2021-02-11)
+
+
+### Bug Fixes
+
+* **ESM:** Drop polyfill in ESM build ([4e3fafb](https://github.com/ideal-postcodes/address-finder-bundled/commit/4e3fafb0c7e4a323aa97c08ec61712f0624628e3))
+
 # [2.4.0](https://github.com/ideal-postcodes/address-finder-bundled/compare/2.3.0...2.4.0) (2021-02-11)
 
 

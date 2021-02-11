@@ -37,13 +37,16 @@
   "files": [
     "dist"
   ],
-  "size-limit": [{
-    "path": "dist/address-finder.js",
-    "limit": "40kb"
-  },{
-    "path": "dist/address-finder.esm.js",
-    "limit": "40kb"
-  }],
+  "size-limit": [
+    {
+      "path": "dist/address-finder.js",
+      "limit": "40kb"
+    },
+    {
+      "path": "dist/address-finder.esm.js",
+      "limit": "40kb"
+    }
+  ],
   "prettier": {
     "trailingComma": "es5"
   },
