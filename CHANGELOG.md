@@ -1,3 +1,15 @@
+# [2.4.0](https://github.com/ideal-postcodes/address-finder-bundled/compare/2.3.0...2.4.0) (2021-02-11)
+
+
+### Bug Fixes
+
+* **Deps:** Upgrade address-finder ([a197769](https://github.com/ideal-postcodes/address-finder-bundled/commit/a19776927043279e0f0a953a86bf56c7ba5dfa09))
+
+
+### Features
+
+* **Bundle:** Scope ie11 polyfills ([cf03ae9](https://github.com/ideal-postcodes/address-finder-bundled/commit/cf03ae99ea0459bba469ff8f26aa42803b9a5efb))
+
 # [2.3.0](https://github.com/ideal-postcodes/address-finder-bundled/compare/2.2.0...2.3.0) (2021-02-08)
 
 
