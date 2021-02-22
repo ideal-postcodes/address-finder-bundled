@@ -92,7 +92,7 @@
     "karma-cli": "~2.0.0",
     "karma-mocha": "~2.0.1",
     "karma-sauce-launcher": "~4.3.4",
-    "karma-typescript": "~5.2.0",
+    "karma-typescript": "~5.4.0",
     "mocha": "~8.3.0",
     "prettier": "~2.2.1",
     "promise-polyfill": "~8.2.0",
