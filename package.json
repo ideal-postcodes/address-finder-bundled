@@ -102,7 +102,7 @@
     "semantic-release": "~17.3.1",
     "size-limit": "^4.9.2",
     "ts-node": "~9.1.1",
-    "typescript": "~4.1.3"
+    "typescript": "~4.2.2"
   },
   "dependencies": {
     "@ideal-postcodes/address-finder": "~1.5.4"
