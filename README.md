@@ -68,7 +68,7 @@ For instance, follow the instructions on [jsdelivr.com/address-finder-bundled](h
 <script src="https://cdn.jsdelivr.net/npm/@ideal-postcodes/address-finder-bundled@2.0.0/dist/address-finder.js"></script>
 
 <script>
-  AddressFinder.setup({
+  IdealPostcodes.AddressFinder.setup({
     apiKey: "iddqd",
     inputField: "#line_1",
     outputFields: {
