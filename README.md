@@ -14,7 +14,7 @@
 
 This package exports polyfilled, minified copies of `address-finder` in various formats available on npm and various JavaScript CDNs. It can be readily [dropped in](#usage) on a page without transpilation of `address-finder`.
 
-If you intend to incorporate the browser client in your own bundle, please use [`address-finder`](https://github.com/ideal-postcodes/address-finder) as your `package.json` dependency.
+If you intend to incorporate the browser client in your own bundle, please use [`core-browser`](https://github.com/ideal-postcodes/core-browser) in your `package.json`.
 
 ## Download
 
@@ -107,7 +107,7 @@ For instance, follow the instructions on [jsdelivr.com/address-finder-bundled](h
 
 ### Client Documentation
 
-This package is a transpiled copy of [`ideal-postcodes/address-finder`](https://github.com/ideal-postcodes/address-finder).
+This package is a transpiled copy of [`ideal-postcodes/address-finder`](https://www.npmjs.com/package/@ideal-postcodes/address-finder).
 
 For a complete list of client methods, including low level resource methods, please see the [address-finder documentation](https://address-finder.ideal-postcodes.dev/#documentation)
 
