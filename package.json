@@ -83,7 +83,7 @@
     "@size-limit/preset-big-lib": "~4.9.2",
     "@types/mocha": "~8.2.0",
     "core-js": "~3.9.0",
-    "core-js-pure": "~3.9.1",
+    "core-js-pure": "~3.10.0",
     "cypress": "~6.8.0",
     "dotenv": "~8.2.0",
     "http-server": "~0.12.3",
