@@ -30,10 +30,10 @@ Use [address-finder.esm.js](https://cdn.jsdelivr.net/npm/@ideal-postcodes/addres
 
 It is important you pin your bundle version in production. Pulling directly from latest **will** cause your integration to fail at some point in the future.
 
-For instance, follow the instructions on [jsdelivr.com/address-finder-bundled](https://www.jsdelivr.com/package/npm/@ideal-postcodes/address-finder-bundled) to pin a specific version in production.  E.g.
+For instance, follow the instructions on [jsdelivr.com/address-finder-bundled](https://www.jsdelivr.com/package/npm/@ideal-postcodes/address-finder-bundled) to pin a major version in production.  E.g.
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@ideal-postcodes/address-finder-bundled@1.0.1/dist/address-finder.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@ideal-postcodes/address-finder-bundled@2"></script>
 ```
 
 ## Links
@@ -65,7 +65,7 @@ For instance, follow the instructions on [jsdelivr.com/address-finder-bundled](h
 #### UMD
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@ideal-postcodes/address-finder-bundled@2.0.0/dist/address-finder.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@ideal-postcodes/address-finder-bundled@2.0.0"></script>
 
 <script>
   IdealPostcodes.AddressFinder.setup({
@@ -87,10 +87,10 @@ For instance, follow the instructions on [jsdelivr.com/address-finder-bundled](h
 ```html
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/@ideal-postcodes/address-finder-bundled@2.0.0/dist/address-finder.esm.js"></script>
+  src="https://cdn.jsdelivr.net/npm/@ideal-postcodes/address-finder-bundled@2/dist/address-finder.esm.js"></script>
 
 <script type="module">
-  import { AddressFinder } from "https://cdn.jsdelivr.net/npm/@ideal-postcodes/address-finder-bundled@2.0.0/dist/address-finder.esm.js";
+  import { AddressFinder } from "https://cdn.jsdelivr.net/npm/@ideal-postcodes/address-finder-bundled@2/dist/address-finder.esm.js";
   AddressFinder.setup({
     apiKey: "iddqd",
     inputField: "#line_1",
