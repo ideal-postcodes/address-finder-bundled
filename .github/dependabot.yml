@@ -1,62 +1,7 @@
 version: 2
-registries:
-  npm-registry-registry-npmjs-org:
-    type: npm-registry
-    url: https://registry.npmjs.org
-    token: "${{secrets.NPM_REGISTRY_REGISTRY_NPMJS_ORG_TOKEN}}"
-
 updates:
 - package-ecosystem: npm
   directory: "/"
   schedule:
     interval: weekly
   open-pull-requests-limit: 10
-  ignore:
-  - dependency-name: cypress
-    versions:
-    - 7.1.0
-  - dependency-name: core-js
-    versions:
-    - 3.10.0
-    - 3.11.0
-  - dependency-name: "@babel/preset-env"
-    versions:
-    - 7.13.12
-    - 7.13.8
-  - dependency-name: rollup
-    versions:
-    - 2.38.3
-    - 2.39.0
-    - 2.42.2
-  - dependency-name: karma
-    versions:
-    - 6.1.1
-    - 6.2.0
-  - dependency-name: semantic-release
-    versions:
-    - 17.4.0
-    - 17.4.2
-  - dependency-name: "@ideal-postcodes/address-finder"
-    versions:
-    - 1.6.0
-    - 1.8.1
-  - dependency-name: core-js-pure
-    versions:
-    - 3.9.0
-    - 3.9.1
-  - dependency-name: puppeteer
-    versions:
-    - 7.0.1
-    - 7.1.0
-    - 8.0.0
-  - dependency-name: typescript
-    versions:
-    - 4.2.2
-  - dependency-name: "@babel/core"
-    versions:
-    - 7.13.8
-  - dependency-name: "@types/mocha"
-    versions:
-    - 8.2.1
-  registries:
-  - npm-registry-registry-npmjs-org
