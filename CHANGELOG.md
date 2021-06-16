@@ -1,3 +1,15 @@
+# [3.0.0](https://github.com/ideal-postcodes/address-finder-bundled/compare/2.4.5...3.0.0) (2021-06-16)
+
+
+### Features
+
+* **Address Finder:** Upgrade to v2 ([8173c5a](https://github.com/ideal-postcodes/address-finder-bundled/commit/8173c5a870c6caf64e683d0a29cf0948deacafe4))
+
+
+### BREAKING CHANGES
+
+* **Address Finder:** - injectStyle now defaults to `true`
+
 ## [2.4.5](https://github.com/ideal-postcodes/address-finder-bundled/compare/2.4.4...2.4.5) (2021-04-23)
 
 
