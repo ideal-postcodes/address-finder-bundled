@@ -84,7 +84,7 @@
     "@types/mocha": "~9.0.0",
     "core-js": "~3.17.2",
     "core-js-pure": "~3.16.1",
-    "cypress": "~8.3.0",
+    "cypress": "~8.4.1",
     "dotenv": "~10.0.0",
     "http-server": "~13.0.0",
     "karma": "~6.3.2",
