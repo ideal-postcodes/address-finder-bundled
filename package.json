@@ -105,6 +105,6 @@
     "typescript": "~4.4.2"
   },
   "dependencies": {
-    "@ideal-postcodes/address-finder": "~2.4.0"
+    "@ideal-postcodes/address-finder": "~2.5.0"
   }
 }
