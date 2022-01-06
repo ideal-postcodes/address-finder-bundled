@@ -33,7 +33,7 @@ It is important you pin your bundle version in production. Pulling directly from
 For instance, follow the instructions on [jsdelivr.com/address-finder-bundled](https://www.jsdelivr.com/package/npm/@ideal-postcodes/address-finder-bundled) to pin a major version in production.  E.g.
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@ideal-postcodes/address-finder-bundled@2"></script>
+<script src="https://cdn.jsdelivr.net/npm/@ideal-postcodes/address-finder-bundled@3"></script>
 ```
 
 ## Links
