@@ -71,7 +71,7 @@
   "license": "AGPL-3.0",
   "devDependencies": {
     "@babel/core": "~7.15.0",
-    "@babel/preset-env": "~7.15.4",
+    "@babel/preset-env": "~7.16.11",
     "@cablanchard/semantic-release": "~1.3.4",
     "@cablanchard/tsconfig": "~2.0.0",
     "@ideal-postcodes/supported-browsers": "~2.5.0",
