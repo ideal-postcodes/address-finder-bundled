@@ -1,3 +1,25 @@
+# [4.0.0](https://github.com/ideal-postcodes/address-finder-bundled/compare/3.2.0...4.0.0) (2022-03-01)
+
+
+### Features
+
+* **Address Finder:** Upgrade to v3, adds US Address Validation ([d75a56c](https://github.com/ideal-postcodes/address-finder-bundled/commit/d75a56c088af35d987128422e20cb1c0b0d7d140))
+
+
+### BREAKING CHANGES
+
+* **Address Finder:** Enables Address Validation for USA alongside GBR
+New parent element now wraps both the address finder suggestion list and toolbar
+Controller no longer provides `view` attribute. References to DOM Elements are stored directly on the instance
+`next()` and `previous()` only update internal state but do not advance the state machine
+All exports have been namespaced to AddressFinder
+Removed controller.view. View components are incorporated into main. Address Finder input instance. e.g. `controller.view.input` becomes `controller.input`
+Address Finder now completes addresses using the /autocomplete/addresses/:id API
+Address Finder now uses the typings found at @ideal-postcodes/openapi
+Adds USA support. Underlying API Client upgraded to 3.0.0
+A parent element which wraps both the address finder suggestion list and toolbar
+Controller no longer provides `view` attribute. References to DOM Elements are stored directly on the instance
+
 # [3.2.0](https://github.com/ideal-postcodes/address-finder-bundled/compare/3.1.1...3.2.0) (2021-08-30)
 
 
