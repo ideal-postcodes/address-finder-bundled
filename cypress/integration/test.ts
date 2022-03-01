@@ -6,15 +6,15 @@
     });
 
     beforeEach(() => {
-      cy.get("#line_1").clear();
-      cy.get("#line_2").clear();
-      cy.get("#post_town").clear();
-      cy.get("#postcode").clear();
+      cy.get("#line_1").clear({ force: true });
+      cy.get("#line_2").clear({ force: true });
+      cy.get("#post_town").clear({ force: true });
+      cy.get("#postcode").clear({ force: true });
     });
 
     describe("Autocomplete", () => {
       it("mouse select", () => {
-        cy.get("#line_1").clear().type("L L Consultancy Ltd");
+        cy.get("#line_1").clear({ force: true }).type("L L Consultancy Ltd", { force: true });
         cy.wait(1000);
         cy.get(".idpc_ul li").first().click()
         cy.wait(1000);
@@ -25,9 +25,9 @@
         cy.wait(1000);
       });
       it("key select", () => {
-        cy.get("#line_1").clear().type("L L Consultancy Ltd");
+        cy.get("#line_1").clear({ force: true }).type("L L Consultancy Ltd", { force: true });
         cy.wait(1000);
-        cy.get("#line_1").type("{downarrow}").type("{enter}");
+        cy.get("#line_1").type("{downarrow}", { force: true }).type("{enter}", { force: true });
         cy.wait(1000);
         cy.get("#line_1").should('have.value', 'L L Consultancy Ltd');
         cy.get("#line_2").should('have.value', '2 Stamford Square');
