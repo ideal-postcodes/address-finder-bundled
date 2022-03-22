@@ -1,3 +1,10 @@
+## [4.0.1](https://github.com/ideal-postcodes/address-finder-bundled/compare/4.0.0...4.0.1) (2022-03-22)
+
+
+### Bug Fixes
+
+* **Address Finder:** Upgrade to 3.0.1 ([cfcf262](https://github.com/ideal-postcodes/address-finder-bundled/commit/cfcf2623f84cd104f1b306bb823b17abf5289ed2))
+
 # [4.0.0](https://github.com/ideal-postcodes/address-finder-bundled/compare/3.2.0...4.0.0) (2022-03-01)
 
 
