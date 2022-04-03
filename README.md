@@ -33,7 +33,7 @@ It is important you pin your bundle version in production. Pulling directly from
 For instance, follow the instructions on [jsdelivr.com/address-finder-bundled](https://www.jsdelivr.com/package/npm/@ideal-postcodes/address-finder-bundled) to pin a major version in production.  E.g.
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@ideal-postcodes/address-finder-bundled@3"></script>
+<script src="https://cdn.jsdelivr.net/npm/@ideal-postcodes/address-finder-bundled@4"></script>
 ```
 
 ## Links
@@ -65,7 +65,7 @@ For instance, follow the instructions on [jsdelivr.com/address-finder-bundled](h
 #### UMD
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@ideal-postcodes/address-finder-bundled@2.0.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/@ideal-postcodes/address-finder-bundled@4"></script>
 
 <script>
   IdealPostcodes.AddressFinder.setup({
@@ -87,7 +87,7 @@ For instance, follow the instructions on [jsdelivr.com/address-finder-bundled](h
 ```html
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/@ideal-postcodes/address-finder-bundled@2/dist/address-finder.esm.js"></script>
+  src="https://cdn.jsdelivr.net/npm/@ideal-postcodes/address-finder-bundled@4/dist/address-finder.esm.js"></script>
 
 <script type="module">
   import { AddressFinder } from "https://cdn.jsdelivr.net/npm/@ideal-postcodes/address-finder-bundled@2/dist/address-finder.esm.js";
