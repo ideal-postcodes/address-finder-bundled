@@ -69,7 +69,7 @@ For instance, follow the instructions on [jsdelivr.com/address-finder-bundled](h
 
 <script>
   IdealPostcodes.AddressFinder.setup({
-    apiKey: "iddqd",
+    apiKey: "ak_test",
     inputField: "#line_1",
     outputFields: {
       line_1: "#line_1",
@@ -92,7 +92,7 @@ For instance, follow the instructions on [jsdelivr.com/address-finder-bundled](h
 <script type="module">
   import { AddressFinder } from "https://cdn.jsdelivr.net/npm/@ideal-postcodes/address-finder-bundled@2/dist/address-finder.esm.js";
   AddressFinder.setup({
-    apiKey: "iddqd",
+    apiKey: "ak_test",
     inputField: "#line_1",
     outputFields: {
       line_1: "#line_1",

@@ -14,7 +14,7 @@ describe("Address Finder", () => {
     AddressFinder.setup({
       scope: doc,
       inputField: "#line_1",
-      apiKey: "iddqd",
+      apiKey: "ak_test",
       onLoaded: () => {
         const result = doc.querySelector(".idpc_autocomplete");
         if (result === null) return done(Error("Address finder not found"));
