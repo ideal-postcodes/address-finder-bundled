@@ -68,6 +68,8 @@
       IdealPostcodes.AddressFinder.setup({
         apiKey: window.apiKey || "iddqd",
         inputField: "#line_1",
+        detectCountry: false,
+        defaultCountry: "GBR",
         outputFields: {
           line_1: "#line_1",
           line_2: "#line_2",
