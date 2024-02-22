@@ -1,7 +1,10 @@
 import babel from "@rollup/plugin-babel";
-import { terser } from "rollup-plugin-terser";
+import terser from "@rollup/plugin-terser";
 import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
+
+import packageJson from "./package.json" with { type: "json" };
+const { version, license, dependencies } = packageJson;
 
 import { version, dependencies, license } from "./package.json";
 
@@ -39,7 +42,6 @@ const include = [
   "node_modules/@ideal-postcodes/jsutil/esm/**",
   "node_modules/capitalise-post-town/dist/**",
   "node_modules/lodash/debounce.js",
-  "node_modules/core-js-pure/**/*",
 ];
 
 const context = "window";

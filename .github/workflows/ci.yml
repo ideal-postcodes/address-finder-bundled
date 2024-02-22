@@ -8,7 +8,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14.x]
+        node-version: [22.x]
 
     steps:
       - uses: actions/checkout@v1
@@ -31,9 +31,6 @@ jobs:
         run: npm run build
 
       - name: Test
-        run: npm test
-
-      - name: Cypress
-        run: npm run test:cypress
+        run: npm run test
         env:
           CYPRESS_API_KEY: ${{ secrets.API_KEY }}
