@@ -1,3 +1,10 @@
+## [4.1.2](https://github.com/ideal-postcodes/address-finder-bundled/compare/4.1.1...4.1.2) (2024-09-10)
+
+
+### Bug Fixes
+
+* **AF:** Bump AF to version 4.6.2 ([1c8af59](https://github.com/ideal-postcodes/address-finder-bundled/commit/1c8af59a86ac4fc116be9ebd4235098082345698))
+
 ## [4.1.1](https://github.com/ideal-postcodes/address-finder-bundled/compare/4.1.0...4.1.1) (2024-05-02)
 
 
