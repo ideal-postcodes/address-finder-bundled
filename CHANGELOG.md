@@ -1,3 +1,10 @@
+# [4.2.0](https://github.com/ideal-postcodes/address-finder-bundled/compare/4.1.2...4.2.0) (2024-09-11)
+
+
+### Features
+
+* **rollup:** Add iife lib build to rollup ([78a69c4](https://github.com/ideal-postcodes/address-finder-bundled/commit/78a69c47bc73480da58b18103ee75e24ce9e31ed))
+
 ## [4.1.2](https://github.com/ideal-postcodes/address-finder-bundled/compare/4.1.1...4.1.2) (2024-09-10)
 
 
