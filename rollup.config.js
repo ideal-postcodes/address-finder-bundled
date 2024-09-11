@@ -128,4 +128,38 @@ export default [
       terser(terserConfig),
     ],
   },
+  /**
+   * IIFE build to have script available in global scope
+   */
+  {
+    input,
+    context,
+    output: {
+      file: "./dist/address-finder.iife.js",
+      banner,
+      format: "iife",
+      extend: true,
+      name: "IdealPostcodes",
+      exports: "named",
+    },
+    plugins: [
+      resolve({
+        preferBuiltins: true,
+        dedupe: ["@ideal-postcodes/jsutil"],
+        mainFields: ["browser", "module", "main"],
+        browser: true,
+      }),
+      commonjs(),
+      inject(polyfills),
+      babel({
+        babelrc: false,
+        ignore: [/core-js/],
+        include,
+        babelHelpers,
+        sourceMap,
+        presets: [["@babel/preset-env", { targets: { ie: "11" } }]],
+      }),
+      terser(terserConfig),
+    ],
+  },
 ];
