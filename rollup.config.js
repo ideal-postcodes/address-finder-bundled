@@ -2,13 +2,6 @@ import babel from "@rollup/plugin-babel";
 import { terser } from "rollup-plugin-terser";
 import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
-import inject from "@rollup/plugin-inject";
-
-export const polyfills = {
-  Promise: "promise-polyfill",
-  Set: "core-js-pure/features/set",
-  "Object.assign": "core-js-pure/features/object/assign",
-};
 
 import { version, dependencies, license } from "./package.json";
 
@@ -78,18 +71,7 @@ export default [
         sourceMap,
         babelHelpers,
         presets: [
-          [
-            "@babel/preset-env",
-            {
-              targets: {
-                edge: "16",
-                firefox: "60",
-                chrome: "61",
-                safari: "11",
-              },
-            },
-          ],
-        ],
+          ["@babel/preset-env", {}]],
       }),
       terser(terserConfig),
     ],
@@ -116,14 +98,13 @@ export default [
         browser: true,
       }),
       commonjs(),
-      inject(polyfills),
       babel({
         babelrc: false,
         ignore: [/core-js/],
         include,
         babelHelpers,
         sourceMap,
-        presets: [["@babel/preset-env", { targets: { ie: "11" } }]],
+        presets: [["@babel/preset-env", {}]],
       }),
       terser(terserConfig),
     ],
@@ -150,14 +131,13 @@ export default [
         browser: true,
       }),
       commonjs(),
-      inject(polyfills),
       babel({
         babelrc: false,
         ignore: [/core-js/],
         include,
         babelHelpers,
         sourceMap,
-        presets: [["@babel/preset-env", { targets: { ie: "11" } }]],
+        presets: [["@babel/preset-env", {}]],
       }),
       terser(terserConfig),
     ],
