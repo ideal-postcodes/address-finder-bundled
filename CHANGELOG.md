@@ -1,3 +1,15 @@
+# [5.0.0](https://github.com/ideal-postcodes/address-finder-bundled/compare/4.2.0...5.0.0) (2024-09-25)
+
+
+### Features
+
+* **Address Finder:** Bump to 5.0.1 ([5e5ba07](https://github.com/ideal-postcodes/address-finder-bundled/commit/5e5ba072fc9a7d322d667ce9e07a7d897f674545))
+
+
+### BREAKING CHANGES
+
+* **Address Finder:** Drops support for IE11
+
 # [4.2.0](https://github.com/ideal-postcodes/address-finder-bundled/compare/4.1.2...4.2.0) (2024-09-11)
 
 

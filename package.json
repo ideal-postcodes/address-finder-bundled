@@ -34,7 +34,9 @@
   },
   "main": "dist/address-finder.js",
   "module": "dist/address-finder.esm.js",
-  "browserslist": ["defaults"],
+  "browserslist": [
+    "defaults"
+  ],
   "files": [
     "dist"
   ],
