@@ -1,11 +1,9 @@
-["ie11", "esm", "umd"].forEach(file => {
+["esm", "umd"].forEach(file => {
   describe(file.toLocaleUpperCase(), () => {
-    before(() => {
-      cy.setup(`./example/${file}.html`);
-      cy.wait(1000);
-    });
 
     beforeEach(() => {
+      cy.setup(`./example/${file}.html`);
+      cy.wait(1000);
       cy.get("#line_1").clear({ force: true });
       cy.get("#line_2").clear({ force: true });
       cy.get("#post_town").clear({ force: true });
