@@ -2,11 +2,9 @@ import babel from "@rollup/plugin-babel";
 import terser from "@rollup/plugin-terser";
 import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
-
 import packageJson from "./package.json" with { type: "json" };
-const { version, license, dependencies } = packageJson;
 
-import { version, dependencies, license } from "./package.json";
+const { version, license, dependencies } = packageJson;
 
 const input = "node_modules/@ideal-postcodes/address-finder/esm/index.js";
 
